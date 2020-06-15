@@ -24,7 +24,7 @@ gulp watch --portal=wikipedia.org # watch dev directory for changes
 python -m SimpleHTTPServer 8080   # start a dev server
 ```
 
-Visit `http://localhost:8080/dev/wikipedia.org` to see the changes in the `dev` directory.
+Visit `http://localhost:8080/dev/islamica.org` to see the changes in the `dev` directory.
 
 Running `gulp help` will output a list of available gulp tasks.
 

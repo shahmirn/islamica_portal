@@ -15,6 +15,6 @@ Output of `site-stats.js`. Contains article-counts, page-views, and urls for all
 
 ## stats.js
 Merges the `site-stats.json` and `new-site-defs.json` files together and exposes functions for ranking the wikis.
-Also formats the data for use on the portal page, like strips tags from strings. This file is used to define variables for Handlebars templates in `/dev/wikipedia.org/controller.js`.
+Also formats the data for use on the portal page, like strips tags from strings. This file is used to define variables for Handlebars templates in `/dev/islamica.org/controller.js`.
 
 

@@ -131,7 +131,7 @@ Stats.getRange = function ( portal, criteria, from, to ) {
  *
  *     [
  *       {
- *         url: 'en.wikipedia.org',
+ *         url: 'en.islamica.org',
  *         numPages: 5011495,
  *         views: 264805605,
  *         closed: false,

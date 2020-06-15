@@ -1,10 +1,10 @@
 {
 	"private": true,
 	"scripts": {
-		"start": "gulp update-stats && gulp watch --portal=wikipedia.org & npm run dev-server",
-		"dev-server": "es-dev-server --app-index ./dev/wikipedia.org/index.html --preserve-symlinks=true --watch --open",
+		"start": "gulp update-stats && gulp watch --portal=islamica.org & npm run dev-server",
+		"dev-server": "es-dev-server --app-index ./dev/islamica.org/index.html --preserve-symlinks=true --watch --open",
 		"test": "gulp -- lint",
-		"build-all-portals": "gulp -- lint && gulp -- update-stats && gulp --portal=all -- fetch-meta && gulp --portal=wikipedia.org -- default"
+		"build-all-portals": "gulp -- lint && gulp -- update-stats && gulp --portal=all -- fetch-meta && gulp --portal=islamica.org -- default"
 	},
 	"devDependencies": {
 		"bluebird": "^3.7.2",
@@ -50,11 +50,11 @@
 	},
 	"bundlesize": [
 		{
-			"path": "prod/wikipedia.org/assets/js/index-*.js",
+			"path": "prod/islamica.org/assets/js/index-*.js",
 			"maxSize": "9.0KB"
 		},
 		{
-			"path": "prod/wikipedia.org/assets/js/gt-ie9-*.js",
+			"path": "prod/islamica.org/assets/js/gt-ie9-*.js",
 			"maxSize": "0.4KB"
 		}
 	]

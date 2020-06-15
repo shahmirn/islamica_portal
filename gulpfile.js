@@ -32,12 +32,12 @@ gulp.task( 'help', function () {
 	console.log( '+-------------------------------------------------------------------------------------------------+' );
 	console.log( '| PORTAL-SPECIFIC TASKS :                                                                         |' );
 	console.log( '|                                                                                                 |' );
-	console.log( '| gulp lint --portal wikipedia.org            - run jslint on JS files on portal JS files         |' );
-	console.log( '| gulp watch --portal wikipedia.org           - watches dev directory and generates an index.html |' );
+	console.log( '| gulp lint --portal islamica.org            - run jslint on JS files on portal JS files         |' );
+	console.log( '| gulp watch --portal islamica.org           - watches dev directory and generates an index.html |' );
 	console.log( '|                                               file in it without inlined/minified assets        |' );
-	console.log( '| gulp --portal wikipedia.org                 - run all of the above on the specified portal page |' );
+	console.log( '| gulp --portal islamica.org                 - run all of the above on the specified portal page |' );
 	console.log( '|                                                                                                 |' );
-	console.log( '| gulp fetch-meta --portal wikipedia.org      - overwrite the portal page with source from Meta   |' );
+	console.log( '| gulp fetch-meta --portal islamica.org      - overwrite the portal page with source from Meta   |' );
 	console.log( '+-------------------------------------------------------------------------------------------------+' );
 	console.log();
 } );
@@ -321,7 +321,7 @@ function fetchMeta() {
 
 	requirePortalParam();
 
-	if ( portalParam === 'wikipedia.org' ) {
+	if ( portalParam === 'islamica.org' ) {
 		console.log( 'Cannot override ' + portalParam + ' portal using fetch-meta.' );
 		return process.exit( 1 );
 	}
@@ -482,14 +482,7 @@ gulp.task( 'svgSprite', gulp.series( 'createSvgSprite', 'convertSVGtoPNG', 'opti
  */
 function updateURLsToPurge() {
 	var UrlsToPurge = [
-			'https://www.wikibooks.org/',
-			'https://www.wikimedia.org/',
-			'https://www.wikinews.org/',
-			'https://www.wikipedia.org/',
-			'https://www.wikiquote.org/',
-			'https://www.wikiversity.org/',
-			'https://www.wikivoyage.org/',
-			'https://www.wiktionary.org/'
+			'https://www.islamica.org/'
 		],
 		portalAssetDirs = 'prod/**/assets/**/*',
 		purgeFile = 'prod/urls-to-purge.txt';

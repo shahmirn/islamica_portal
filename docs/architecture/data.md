@@ -2,7 +2,7 @@
 **TOC**
 
 - [Overview](../README.md)
-- Architecture of www.wikipedia.org
+- Architecture of www.islamica.org
 	- **Data sources**
 	- [l10n](l10n.md)
 	- [HTML](html.md)

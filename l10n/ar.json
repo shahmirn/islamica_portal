@@ -28,62 +28,9 @@
 	"privacy-policy-link": "https://meta.wikimedia.org/wiki/Privacy_policy/ar",
 	"search-input-button": "بحث",
 	"search-input-label": "ابحث في ويكيبيديا",
-	"wiki": {
+	"islamica": {
 		"name": "ويكيبيديا",
 		"slogan": "الموسوعة الحرة",
 		"entries": "مقالة"
-	},
-	"wiktionary": {
-		"name": "ويكاموس",
-		"slogan": "قاموس حر",
-		"entries": "مقالات"
-	},
-	"wikibooks": {
-		"name": "ويكي الكتب",
-		"slogan": "كتب مدرسية مجانية",
-		"entries": "الصفحات"
-	},
-	"wikinews": {
-		"name": "ويكي الأخبار",
-		"slogan": "مصادر مجانية جديدة",
-		"entries": "مقالات"
-	},
-	"wikiquote": {
-		"name": "ويكي الاقتباس",
-		"slogan": "خلاصة اقتباسات  حرة",
-		"entries": "مقالات"
-	},
-	"wikisource": {
-		"name": "ويكي مصدر",
-		"slogan": "مكتبة مجانية"
-	},
-	"wikiversity": {
-		"name": "ويكي الجامعة",
-		"slogan": "المواد الدراسية المجانية",
-		"entries": "مصادر التعلم"
-	},
-	"wikivoyage": {
-		"name": "ويكي الرحلات",
-		"slogan": "دليل سفر مجاني"
-	},
-	"commons": {
-		"name": "كومنز",
-		"slogan": "الصور التي يمكن استخدامها بحرية والمزيد"
-	},
-	"wikispecies": {
-		"name": "ويكي الأنواع",
-		"slogan": "دليل الأنواع الحر"
-	},
-	"wikidata": {
-		"name": "ويكي بيانات",
-		"slogan": "قاعدة البيانات الحرة"
-	},
-	"mediawiki": {
-		"name": "ميدياويكي",
-		"slogan": "برمجيات الويكي الحرة"
-	},
-	"metawiki": {
-		"name": "ميتا ويكي",
-		"slogan": "تنسيق مشاريع ويكيميديا"
 	}
 }

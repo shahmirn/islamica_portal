@@ -62,7 +62,7 @@ function getPageCounts() {
 }
 
 function getSiteMatrix() {
-	return httpGet( 'https://meta.wikimedia.org/w/api.php?action=sitematrix&format=json&smtype=language&smlangprop=code%7Csite&smsiteprop=url%7Cdbname%7Ccode' );
+	return httpGet( 'https://pool.islamica.org/api.php?action=sitematrix&format=json&smtype=language&smlangprop=code%7Csite&smsiteprop=url%7Cdbname%7Ccode' );
 }
 
 function parseProjectString( str ) {

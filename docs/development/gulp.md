@@ -2,7 +2,7 @@
 **TOC**
 
 - [Overview](../README.md)
-- Architecture of www.wikipedia.org
+- Architecture of www.islamica.org
 	- [Data sources](../architecture/data.md)
 	- [l10n](../architecture/l10n.md)
 	- [HTML](../architecture/html.md)
@@ -36,7 +36,7 @@ The Gulp tasks take a `--portal` parameter to specify which portal directory the
 - `concat-minify-js` - Concatenates and minifies JS (for production build).
 - `minify-html` - Cleans index.html (for production build).
 - `copy-images` - Copies images to `prod` directory (for production build).
-- `copy-translation-files` - Copies translation files from `dev/wikipedia.org/assets/l10n` to `prod` (for production build).
+- `copy-translation-files` - Copies translation files from `dev/islamica.org/assets/l10n` to `prod` (for production build).
 - `update-urls-to-purge` - Updates `urls-to-purge.txt` file (for deployment).
 - `fetch-meta` - downloads the latest versions of the sister project portals into the `prod` directory.
 

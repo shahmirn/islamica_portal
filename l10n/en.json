@@ -16,62 +16,9 @@
 	"privacy-policy-link": "https://meta.wikimedia.org/wiki/Privacy_policy",
 	"search-input-button": "Search",
 	"search-input-label": "Search Wikipedia",
-	"wiki": {
+	"islamica": {
 		"name": "Wikipedia",
 		"slogan": "The Free Encyclopedia",
 		"entries": "articles"
-	},
-	"wiktionary": {
-		"name": "Wiktionary",
-		"slogan": "Free dictionary",
-		"entries": "entries"
-	},
-	"wikibooks": {
-		"name": "Wikibooks",
-		"slogan": "Free textbooks",
-		"entries": "pages"
-	},
-	"wikinews": {
-		"name": "Wikinews",
-		"slogan": "Free news source",
-		"entries": "articles"
-	},
-	"wikiquote": {
-		"name": "Wikiquote",
-		"slogan": "Free quote compendium",
-		"entries": "articles"
-	},
-	"wikisource": {
-		"name": "Wikisource",
-		"slogan": "Free library"
-	},
-	"wikiversity": {
-		"name": "Wikiversity",
-		"slogan": "Free course materials",
-		"entries": "learning resources"
-	},
-	"wikivoyage": {
-		"name": "Wikivoyage",
-		"slogan": "Free travel guide"
-	},
-	"commons": {
-		"name": "Commons",
-		"slogan": "Freely usable photos & more"
-	},
-	"wikispecies": {
-		"name": "Wikispecies",
-		"slogan": "Free species directory"
-	},
-	"wikidata": {
-		"name": "Wikidata",
-		"slogan": "Free knowledge base"
-	},
-	"mediawiki": {
-		"name": "MediaWiki",
-		"slogan": "Free & open wiki application"
-	},
-	"metawiki": {
-		"name": "Meta-Wiki",
-		"slogan": "Community coordination & documentation"
 	}
 }
