@@ -4,7 +4,7 @@
 		"start": "gulp update-stats && gulp watch --portal=islamica.org & npm run dev-server",
 		"dev-server": "es-dev-server --app-index ./dev/islamica.org/index.html --preserve-symlinks=true --watch --open",
 		"test": "gulp -- lint",
-		"build-all-portals": "gulp -- lint && gulp -- update-stats && gulp --portal=all -- fetch-meta && gulp --portal=islamica.org -- default"
+		"build-portal": "gulp -- lint && gulp -- update-stats && gulp --portal=islamica.org -- default"
 	},
 	"devDependencies": {
 		"bluebird": "^3.7.2",
