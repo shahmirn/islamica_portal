@@ -9,8 +9,8 @@ var _ = require( 'underscore' ),
 	rtlLanguages = require( './rtl-languages.json' ),
 	crypto = require( 'crypto' ),
 	exec = require( 'child_process' ).execSync,
-	top100000List,
-	top100000Dropdown,
+	topList,
+	topDropdown,
 	Controller,
 	cachebuster,
 	siteStats,
@@ -18,8 +18,8 @@ var _ = require( 'underscore' ),
 	translationPath = __dirname + '/assets/l10n/';
 
 // Format the dropdown for ./templates/search.mustache
-top100000List = stats.getRange( 'islamica', 'numPages', 100000 );
-top100000Dropdown = stats.format( 'islamica', top100000List, {
+topList = stats.getRange( 'islamica', 'numPages', 0 );
+topDropdown = stats.format( 'islamica', topList, {
 	stripTags: true
 } );
 
@@ -127,7 +127,7 @@ Controller = {
 	top10000Articles: stats.getRangeFormatted( 'islamica', 'numPages', 10000, 100000 ),
 	top1000Articles: stats.getRangeFormatted( 'islamica', 'numPages', 1000, 10000 ),
 	top100Articles: stats.getRangeFormatted( 'islamica', 'numPages', 100, 1000 ),
-	top100000Dropdown: top100000Dropdown,
+	topDropdown: topDropdown,
 	preloadLinks: getPreloadLinks(),
 	otherProjects: otherProjects,
 	otherLanguages: otherLanguages,

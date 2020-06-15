@@ -201,19 +201,7 @@ Stats.format = function ( portal, list, optionsArg ) {
 				'Privacy Policy',
 				'terms-link',
 				'privacy-policy-link',
-				'wiki',
-				'wiktionary',
-				'wikibooks',
-				'wikinews',
-				'wikiquote',
-				'wikisource',
-				'wikiversity',
-				'wikivoyage',
-				'commons',
-				'wikispecies',
-				'wikidata',
-				'mediawiki',
-				'metawiki' ],
+				'islamica' ],
 			nonStandardCode;
 
 		formatted.index = ++index;

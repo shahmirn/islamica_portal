@@ -47,15 +47,25 @@ function getPageCounts() {
 		// Production
 		// TODO:
 	} else {
-		// Developer's machine
-		return httpGet( 'https://tools.wmflabs.org/pagecounts/pagecounts.json' )
-			.then( function ( pagecounts ) {
-				var stats = {};
+        // Developer's machine
+        return BBPromise.all( [
+            httpGet( 'https://en.islamica.org/api.php?action=query&meta=siteinfo&siprop=general|statistics&format=json' ),
+            httpGet( 'https://ar.islamica.org/api.php?action=query&meta=siteinfo&siprop=general|statistics&format=json' ),
+            httpGet( 'https://es.islamica.org/api.php?action=query&meta=siteinfo&siprop=general|statistics&format=json' ),
+            httpGet( 'https://fa.islamica.org/api.php?action=query&meta=siteinfo&siprop=general|statistics&format=json' ),
+            httpGet( 'https://hi.islamica.org/api.php?action=query&meta=siteinfo&siprop=general|statistics&format=json' ),
+            httpGet( 'https://ur.islamica.org/api.php?action=query&meta=siteinfo&siprop=general|statistics&format=json' )
+        ] )
+			.then( function ( responses ) {
+                var stats = {};
 
-				_.each( pagecounts, function ( wiki, code ) {
+				_.each( responses, function ( response ) {
+                    var code = response.query.general.wikiid;
+                    var pages = response.query.statistics.pages;
 					code = code.replace( /_/g, '-' );
-					stats[ code ] = wiki.contentPages;
-				} );
+					stats[ code ] = pages;
+                } );
+
 				return BBPromise.resolve( stats );
 			} );
 	}
@@ -189,11 +199,10 @@ function getProjectViews() {
 function getSiteStats() {
 	var stats = {};
 
-	return BBPromise.all( [ getPageCounts(), getSiteMatrix(), getProjectViews() ] )
+	return BBPromise.all( [ getPageCounts(), getSiteMatrix() ] )
 		.then( function ( data ) {
 			var counts = data[ 0 ],
-				siteMatrix = data[ 1 ].sitematrix,
-				views = data[ 2 ];
+				siteMatrix = data[ 1 ].sitematrix;
 
 			_.each( siteMatrix, function ( lang, propName ) {
 				if ( !/^\d+$/.test( propName ) ) {
@@ -205,11 +214,11 @@ function getSiteStats() {
 					stats[ site.code ][ lang.code ] = {
 						url: site.url,
 						numPages: counts[ dbname ] || 0,
-						views: views[ dbname ] || 0,
+						views: 0,
 						closed: site.closed !== undefined
 					};
 				} );
-			} );
+            } );
 
 			return BBPromise.resolve( stats );
 		} );
