@@ -150,7 +150,7 @@
 
 		l10nReq = new XMLHttpRequest();
 
-		l10nReq.open( 'GET', encodeURI( 'portal/islamica.org/assets/l10n/' + primaryLang + '-' + translationsHash + '.json' ), true );
+		l10nReq.open( 'GET', encodeURI( 'assets/l10n/' + primaryLang + '-' + translationsHash + '.json' ), true );
 
 		l10nReq.onreadystatechange = function () {
 			if ( l10nReq.readyState === 4 ) {

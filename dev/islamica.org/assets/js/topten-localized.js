@@ -174,7 +174,7 @@
 		var i18nReq = new XMLHttpRequest(),
 			wikiInfo;
 
-		i18nReq.open( 'GET', encodeURI( 'portal/islamica.org/assets/l10n/' + lang + '-' + translationsHash + '.json' ), true );
+		i18nReq.open( 'GET', encodeURI( 'assets/l10n/' + lang + '-' + translationsHash + '.json' ), true );
 
 		i18nReq.onload = function () {
 

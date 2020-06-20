@@ -59,7 +59,7 @@ function getPreloadLinks() {
 	var preloadLinks = [];
 	[
 		{
-			pattern: 'portal/islamica.org/assets/img/sprite*.svg',
+			pattern: 'assets/img/sprite*.svg',
 			as: 'image'
 		}
 	].forEach( function ( source ) {

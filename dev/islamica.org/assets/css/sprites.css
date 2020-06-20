@@ -1,16 +1,16 @@
 
 .sprite-icons {
-  background-image: url('portal/islamica.org/assets/img/sprite-icons.png?27378e2bb51199321b32dd1ac3f5cd755adc21a5');
+  background-image: url('assets/img/sprite-icons.png?27378e2bb51199321b32dd1ac3f5cd755adc21a5');
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
   .sprite-icons {
-    background-image: url('portal/islamica.org/assets/img/sprite-icons@1.5x.png?8b4adbf1a17a5d1b55e73aa53a5e859294cfe718');
+    background-image: url('assets/img/sprite-icons@1.5x.png?8b4adbf1a17a5d1b55e73aa53a5e859294cfe718');
     background-size: 23px 55px;
   }
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .sprite-icons {
-    background-image: url('portal/islamica.org/assets/img/sprite-icons@2x.png?896c2ebd1d3ad62927487d7ab07fa88213d5bfe8');
+    background-image: url('assets/img/sprite-icons@2x.png?896c2ebd1d3ad62927487d7ab07fa88213d5bfe8');
     background-size: 23px 55px;
   }
 }
@@ -37,17 +37,17 @@
 }
 
 .sprite-project-logos {
-  background-image: url('portal/islamica.org/assets/img/sprite-project-logos.png?ad11e1cf7b7d24be96fdb5ce03b9fb76ce0b27e0');
+  background-image: url('assets/img/sprite-project-logos.png?ad11e1cf7b7d24be96fdb5ce03b9fb76ce0b27e0');
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
   .sprite-project-logos {
-    background-image: url('portal/islamica.org/assets/img/sprite-project-logos@1.5x.png?2a317ca084a17913a3ae8299b20cb72bc2a593f0');
+    background-image: url('assets/img/sprite-project-logos@1.5x.png?2a317ca084a17913a3ae8299b20cb72bc2a593f0');
     background-size: 47px 511px;
   }
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .sprite-project-logos {
-    background-image: url('portal/islamica.org/assets/img/sprite-project-logos@2x.png?57127272d2c04d71396e2a9514caa7f3c98ac861');
+    background-image: url('assets/img/sprite-project-logos@2x.png?57127272d2c04d71396e2a9514caa7f3c98ac861');
     background-size: 47px 511px;
   }
 }
