@@ -61,9 +61,9 @@ function getPageCounts() {
 
 				_.each( responses, function ( response ) {
                     var code = response.query.general.wikiid;
-                    var pages = response.query.statistics.pages;
+                    var articles = response.query.statistics.articles;
 					code = code.replace( /_/g, '-' );
-					stats[ code ] = pages;
+					stats[ code ] = articles;
                 } );
 
 				return BBPromise.resolve( stats );
