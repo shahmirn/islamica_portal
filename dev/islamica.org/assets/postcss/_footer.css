@@ -41,9 +41,16 @@
     margin-right: 1.7rem;
 }
 
-@media screen and ( min-height: 998px ) {
+@media screen and ( min-height: 994px ) {
     .footer {
-        position: absolute;
+        position: fixed;
+        bottom: 0;
+    }
+}
+
+@media screen and ( max-width: 480px )and ( min-height: 714px ) {
+    .footer {
+        position: fixed;
         bottom: 0;
     }
 }
