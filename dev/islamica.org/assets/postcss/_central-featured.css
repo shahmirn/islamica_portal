@@ -17,14 +17,14 @@
     margin-bottom: 1.3rem;
     margin-right: 1.1rem;
     margin-left: 1.1rem;
-    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.05);
+    box-shadow: 0 0 15px 0 rgba( 0, 0, 0, 0.05 );
     padding-top: 13px;
     padding-bottom: 13px;
 }
 
 .central-featured-lang a {
-	font-family: 'Myriad Pro', -apple-system, 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Lato', 'Helvetica', 'Arial', sans-serif;
-	color: #000000;
+	font-family: 'Myriad Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Lato, Helvetica, Arial, sans-serif;
+	color: #000;
 }
 
 /* Make entire block clickable, surpress hover underline */
@@ -73,7 +73,7 @@
 	.central-featured-lang {
 		display: inline-block;
 		box-sizing: border-box;
-		width: calc(33% - 1.4rem);
+		width: calc( 33% - 1.4rem );
 		margin-bottom: 1.3rem;
 		margin-right: 0.5rem;
 		margin-left: 0.5rem;

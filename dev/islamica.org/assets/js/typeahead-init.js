@@ -1,4 +1,4 @@
-/* global wmTest, WMTypeAhead, _, addEvent */
+/* global WMTypeAhead, _, addEvent */
 
 ( function ( WMTypeAhead ) {
 

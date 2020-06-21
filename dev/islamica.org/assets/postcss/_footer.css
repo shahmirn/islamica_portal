@@ -1,13 +1,13 @@
 /* ::: Footer ::: */
 
 .footer {
-    background: url(/assets/img/footer.svg);
+    background: url( /assets/img/footer.svg );
     background-repeat: no-repeat;
     width: 940px;
     max-width: 100%;
     height: 307px;
     color: #fff;
-    font-family: 'Oxygen', 'Linux Libertine', 'Hoefler Text', georgia, 'Times New Roman', times, serif;
+    font-family: Oxygen, 'Linux Libertine', 'Hoefler Text', georgia, 'Times New Roman', times, serif;
 }
 
 .footer-content {
@@ -29,7 +29,7 @@
 
 .trs-info {
     display: inline-block;
-    width: calc(100% - 5.6rem - 1.5rem);
+    width: calc( 100% - 5.6rem - 1.5rem );
     margin-left: 1.5rem;
 }
 
@@ -37,7 +37,7 @@
     margin-top: 6.6rem;
 }
 
-.other-projects > *:not(:last-child) {
+.other-projects > *:not( :last-child ) {
     margin-right: 1.7rem;
 }
 

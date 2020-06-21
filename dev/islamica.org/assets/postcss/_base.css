@@ -34,10 +34,10 @@ body {
 }
 
 #container {
-  position:relative; /* needed for footer positioning*/
-  height:auto !important; /* real browsers */
-  height:100%; /* IE6: treaded as min-height*/
-  min-height:100%; /* real browsers */
+  position: relative; /* needed for footer positioning */
+  height: auto !important; /* real browsers */
+  height: 100%; /* IE6: treaded as min-height */
+  min-height: 100%; /* real browsers */
 }
 
 /* HTML5 display definitions
