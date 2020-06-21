@@ -18,4 +18,7 @@
 
     --ss-select-z-index: 1;
     --ss-button-z-index: 2;
+    --border-radius-base: 3.4rem;
+
+    --font-family-serif: 'Bookman Old Style', 'Linux Libertine', 'Hoefler Text', georgia, 'Times New Roman', times, serif;
 }

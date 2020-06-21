@@ -19,34 +19,37 @@
 <link rel="preload" as="{{as}}" href="{{href}}">
 {{/each}}
 <link rel="preconnect" href="//pool.islamica.org">
+<link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
 </head>
 
 <body id="www-islamica-org">
 
-{{> header-logo}}
+<div id="body-container">
+    {{> header-logo}}
 
-{{> top10}}
+    <!-- Search form -->
+    {{> search}}
 
-<!-- Search form -->
-{{> search}}
+    {{> top10}}
 
-{{!-- {{> language-list-button }} --}}
+    {{!-- {{> language-list-button }} --}}
 
-{{!-- <div class="lang-list-border"></div> --}}
+    {{!-- <div class="lang-list-border"></div> --}}
 
-<div class="lang-list-container">
+    <div class="lang-list-container">
 
-    <div id="js-lang-lists" class="lang-list-content">
-        {{> top-n-articles}}
-        <!-- Other languages -->
-        {{> other-languages}}
+        <div id="js-lang-lists" class="lang-list-content">
+            {{> top-n-articles}}
+            <!-- Other languages -->
+            {{> other-languages}}
+        </div>
+
     </div>
-
 </div>
 
 {{!-- {{> divider}} --}}
 
-{{!-- {{> footer}} --}}
+{{> footer}}
 
 {{!-- {{> site-license }} --}}
 
@@ -80,18 +83,18 @@
 <script src="assets/js/mediawiki.lite.js"></script>
 
 <!-- event logging & AB testing -->
-<script src="assets/js/seedrandom.js"></script>
-<script src="assets/js/event-logging-lite.js"></script>
-<script src="assets/js/wm-test.js"></script>
-<script src="assets/js/wikipedia-org-event-logging.js"></script>
+{{!-- <script src="assets/js/seedrandom.js"></script> --}}
+{{!-- <script src="assets/js/event-logging-lite.js"></script> --}}
+{{!-- <script src="assets/js/wm-test.js"></script> --}}
+{{!-- <script src="assets/js/wikipedia-org-event-logging.js"></script> --}}
 
 <!-- page features -->
 <script src="assets/js/wm-typeahead.js"></script>
 <script src="assets/js/typeahead-init.js"></script>
-<script src="assets/js/topten-localized.js"></script>
-<script src="assets/js/wm-portal.js"></script>
-<script src="assets/js/lang-dropdown.js"></script>
-<script src="assets/js/page-localized.js"></script>
+{{!-- <script src="assets/js/topten-localized.js"></script> --}}
+{{!-- <script src="assets/js/wm-portal.js"></script> --}}
+{{!-- <script src="assets/js/lang-dropdown.js"></script> --}}
+{{!-- <script src="assets/js/page-localized.js"></script> --}}
 
 <!-- endbuild -->
 

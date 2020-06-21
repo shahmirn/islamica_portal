@@ -20,7 +20,7 @@ From the root of the repo, run:
 ```
 npm install                       # install dependancies
 gulp update-stats                 # update portal stats
-gulp watch --portal=wikipedia.org # watch dev directory for changes
+gulp watch --portal=islamica.org # watch dev directory for changes
 python -m SimpleHTTPServer 8080   # start a dev server
 ```
 

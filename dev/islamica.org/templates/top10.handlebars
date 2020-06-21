@@ -6,7 +6,7 @@
     {{#each top10views}}
 
         <!-- #{{index}}. {{url}} - {{formatNumber views thousandSeparator=true rounded=true}} views/day -->
-        <div class="central-featured-lang lang{{index}}" lang="{{lang}}" dir="{{#has ../rtlLanguages lang}}rtl{{else}}ltr{{/has}}">
+        <div class="central-featured-lang" lang="{{lang}}" dir="{{#has ../rtlLanguages lang}}rtl{{else}}ltr{{/has}}">
         <a id="js-link-box-{{lang}}"
            href="//{{url}}/"
            title="{{#if latin}}{{latin}}{{else}}{{name}}{{/if}} — {{siteName}} — {{slogan}}"

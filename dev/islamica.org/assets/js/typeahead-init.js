@@ -1,6 +1,6 @@
 /* global wmTest, WMTypeAhead, _, addEvent */
 
-( function ( wmTest, WMTypeAhead ) {
+( function ( WMTypeAhead ) {
 
 	var inputEvent,
 		searchInput = document.getElementById( 'searchInput' ),
@@ -22,4 +22,4 @@
 		typeAhead.query( searchInput.value, document.getElementById( 'searchLanguage' ).value );
 	}, 100 ) );
 
-}( wmTest, WMTypeAhead ) );
+}( WMTypeAhead ) );

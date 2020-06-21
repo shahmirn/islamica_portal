@@ -59,7 +59,7 @@ function getPreloadLinks() {
 	var preloadLinks = [];
 	[
 		{
-			pattern: 'assets/img/sprite*.svg',
+			pattern: '/assets/img/sprite*.svg',
 			as: 'image'
 		}
 	].forEach( function ( source ) {

@@ -33,7 +33,7 @@ a.other-project-link {
 /* Wikinews icon remains a raster PNG due to the
 complexity of the SVG file */
 .svg-Wikinews-logo_sister {
-	background-image: url( assets/img/Wikinews-logo_sister.png );
+	background-image: url( /assets/img/Wikinews-logo_sister.png );
 	background-position: 0 0;
 	background-size: 47px 26px;
 	width: 47px;
@@ -42,7 +42,7 @@ complexity of the SVG file */
 
 @media ( min-resolution: 120dpi ) {
 	.svg-Wikinews-logo_sister {
-		background-image: url( assets/img/Wikinews-logo_sister@2x.png );
+		background-image: url( /assets/img/Wikinews-logo_sister@2x.png );
 	}
 }
 

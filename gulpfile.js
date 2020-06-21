@@ -325,7 +325,7 @@ gulp.task( 'cleanSprites', cleanSprites );
 
 /**
  * Create SVG sprite for use as a CSS background images.
- * Combine SVG images from the assets/img/sprite_assets directory in the dev folder.
+ * Combine SVG images from the /assets/img/sprite_assets directory in the dev folder.
  * Output the SVG sprite in the assets/img dir as sprite-*.svg, where * is a cachebusting hash.
  *
  * Also outputs a CSS file for the SVG sprite named sprite.css in the dev CSS folder.
@@ -362,7 +362,7 @@ function createSvgSprite() {
 				mapname: 'svg-sprite'
 			}
 		} ) )
-		.pipe( plugins.if( '*.svg', gulp.dest( getBaseDir() + 'assets/img/' ), gulp.dest( getBaseDir() + 'assets/css/' ) ) );
+		.pipe( plugins.if( '*.svg', gulp.dest( getBaseDir() + '/assets/img/' ), gulp.dest( getBaseDir() + 'assets/css/' ) ) );
 }
 gulp.task( 'createSvgSprite', gulp.series( 'cleanSprites', createSvgSprite ) );
 
@@ -374,7 +374,7 @@ gulp.task( 'createSvgSprite', gulp.series( 'cleanSprites', createSvgSprite ) );
 function convertSVGtoPNG() {
 	return gulp.src( getConfig().img.sprite.outputSVGGlob )
 		.pipe( plugins.svg2png() )
-		.pipe( gulp.dest( getBaseDir() + 'assets/img/' ) );
+		.pipe( gulp.dest( getBaseDir() + '/assets/img/' ) );
 }
 gulp.task( 'convertSVGtoPNG', gulp.series( 'createSvgSprite', convertSVGtoPNG ) );
 
