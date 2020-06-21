@@ -230,11 +230,7 @@ function concatMinifyJS() {
 		.pipe( plugins.useref( {
 			searchPath: getBaseDir(),
 			transformTargetPath: function ( filePath ) {
-				/**
-				 * Rewrite concatenated file path to include symlink
-				 * necessary for production apache config.
-				 */
-				return `portal/${portalParam}/${filePath}`;
+				return `${filePath}`;
 			}
 		} ) )
 		.pipe( plugins.if( '*.js', plugins.uglify() ) )
