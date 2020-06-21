@@ -10,7 +10,6 @@ var gulp = require( 'gulp' ),
 	gulpStylelint = require( 'gulp-stylelint' ),
 	del = require( 'del' ),
 	plugins = gulpLoadPlugins(),
-	gulpSlash = require( 'gulp-slash' ),
 	replace = require( 'gulp-replace' ),
 	execFile = require( 'child_process' ).execFile,
 	pngquant = require( 'pngquant-bin' ),
@@ -428,69 +427,6 @@ function copyImages() {
 gulp.task( 'svgSprite', gulp.series( 'createSvgSprite', 'convertSVGtoPNG', 'optimizePNGfallback', 'replaceSVGSpriteCSS' ) );
 
 /**
- * Create a 'urls-to-purge.txt' file at the root of the repo that
- * contains a list of URL's that must be purged from the server cache.
- * These URLs include the root portal urls for all portals and all
- * production asset URLs in this repo.
- *
- * Must be run when after all assets have been versioned, minified &
- * copied into the prod dir.
- *
- * @return {Stream}
- */
-function updateURLsToPurge() {
-	var UrlsToPurge = [
-			'https://www.islamica.org/'
-		],
-		portalAssetDirs = 'prod/**/assets/**/*',
-		purgeFile = 'prod/urls-to-purge.txt';
-
-	function createAssetUrl( file ) {
-		var domain, urlToPurge;
-		domain = file.relative.split( '/' )[ 0 ];
-		urlToPurge = 'https://www.' + domain + '/portal/' + file.relative;
-		return urlToPurge;
-	}
-
-	function addAssetUrl( url ) {
-		return UrlsToPurge.push( url );
-	}
-
-	function assetFilesStream( file ) {
-		var assetUrl;
-		if ( file.isDirectory() ) {
-			return;
-		}
-		assetUrl = createAssetUrl( file );
-		return addAssetUrl( assetUrl );
-	}
-
-	function writePurgeFile( UrlsToPurge ) {
-		var fileContents = UrlsToPurge.join( '\n' );
-		fs.writeFileSync( purgeFile, fileContents );
-	}
-
-	return gulp.src( portalAssetDirs, { buffer: false, read: false } )
-		.pipe( gulpSlash() ) // Because windows slashes are '\' instead of '/'
-		.pipe( plugins.tap( assetFilesStream ) )
-		.on( 'end', function () {
-			writePurgeFile( UrlsToPurge );
-		} );
-}
-/**
- * Creates a symlink in the production folder which is required
- * by the Apache config:
- * https://gerrit.wikimedia.org/r/plugins/gitiles/operations/puppet/+/refs/heads/production/modules/mediawiki/templates/apache/sites/wwwportals.conf.erb
- * @return {Stream}
- */
-function createProdSymlink() {
-	return gulp.src( getProdDir() )
-		.pipe( gulp.symlink( getProdDir() + '/portal',
-			{ relativeSymlinks: true }
-		) );
-}
-
-/**
  * Watch for changes in dev folder and compile:
  * - handlebars templates
  * - postCSS files
@@ -521,7 +457,5 @@ gulp.task( 'default', gulp.series(
 	concatMinifyJS,
 	minifyHTML,
 	copyImages,
-	copyTranslationFiles,
-	createProdSymlink,
-	updateURLsToPurge
+	copyTranslationFiles
 ) );
