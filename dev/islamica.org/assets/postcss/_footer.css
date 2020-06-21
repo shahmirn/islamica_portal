@@ -41,7 +41,7 @@
     margin-right: 1.7rem;
 }
 
-@media screen and ( min-height: 994px ) {
+@media screen and ( min-height: 937px ) {
     .footer {
         position: fixed;
         bottom: 0;
